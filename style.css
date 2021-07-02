@@ -11,6 +11,9 @@ body{
 
 .tete{
     height: 50px;
+    background-color:rgb(1, 29, 29); 
+    color:white;
+    padding-bottom: +30px;
 }
 .name{
     height: 50px;
@@ -33,7 +36,7 @@ div label{
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .divers{
     justify-content: right;
@@ -60,8 +63,8 @@ ul{
 .bouton:hover{
     
     border-radius: 7px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: rgb(250, 250, 250);
+    box-shadow: #fdfdfd59 0px 5px 15px;
+    background-color: rgb(1, 47, 59);
     font-family: Arial, Helvetica, sans-serif;
     transition: .3s ease;
     font-size: 22px;
@@ -96,11 +99,10 @@ nav{
 }
 .image1{
     border-radius: 7px;
-    max-height: 500px;
+    max-height: 60%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .image1:hover{
-   max-width: 550px;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .text{
@@ -117,15 +119,33 @@ nav{
     max-width: 80%;
 }
 .text__item1{
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
 h1{
     font-family:'Montserrat', sans-serif;
-
+    background-color: rgb(1, 29, 29);
+    margin-top: 0%;
+    padding-top: 15px;
 }
-
+.bouton2{
+    color: black;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+    padding: 10px;
+}
+.bouton2:hover{
+    border-radius: 7px;
+    box-shadow: #00000059 0px 5px 15px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .3s ease;
+    font-size: 22px;
+    font-weight: normal;
+}
 .conteneur{
     display: flex;
     flex-direction: column;
@@ -134,12 +154,27 @@ div input[type=checkbox]:checked ~ ul{
     display: block;
     position: absolute;
     z-index: 1;
-    background-color: rgb(167, 167, 167, 0.1);
+    background-color:rgb(1, 29, 29);
     border-radius: 7px;
 }
+.image2{
+    max-width: 90%;
+    max-height: 100%;
+    margin:auto;
+    padding: auto;
+}
+.footeur{
+    text-align: center;
+    padding-top: 30px; 
+    height: 100px;
+    background-color:rgb(1, 29, 29); 
+    color: white;
+}
 
-
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 700px){
+    body{
+        -height: 100%;
+    }
     .section{
         display: flex;
         flex-direction: column;
@@ -153,7 +188,7 @@ div input[type=checkbox]:checked ~ ul{
     .text {
         position: relative;
         word-wrap: break-word;
-        font-size: 18px;
+        font-size: 13px;
         width: 100%;
     }
     .image1{
@@ -163,7 +198,8 @@ div input[type=checkbox]:checked ~ ul{
         padding: auto;
     }
     .text__item1{
-        font-size: 28px;
+        font-size: 20px;
+        padding-bottom: 5px;
     }
     .tete p {
         max-height: 90%;
@@ -182,20 +218,36 @@ div input[type=checkbox]:checked ~ ul{
         padding-left: 10px;
     }
     .name p {
-        margin-top: 22px;
+        margin-top: 20px;
     }
 
     .menu-responsive{
         display: block;
         margin: auto;
-        padding: auto;
         font-family: 'Montserrat', sans-serif;
         margin-top: 15px;
         justify-content: right;
     }
+    .menu-responsive p{
+        font-size: 16px;
+    }
     div ul{
         display: none;
         text-align: center;
+    }
+    .footeur{
+        height: 60px;
+        font-size: 13px;
+        padding-top: 8px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+    .bouton{
+        font-size: 15px;
+    }
+    .bouton:hover{
+        font-size: 18px;
     }
 
     
